@@ -1,0 +1,648 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+section{
+    width: 100%;
+    height:100vh;
+    background-image: url(images/bg1.png);
+    background-size: 50%;
+    background-position: right;
+    background-repeat: no-repeat;
+}
+
+section nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0 0 8px rgba(0,0,0,0.6);
+    background: white;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+section nav .logo{
+    font-size: 35px;
+    color: #000;
+    margin: 5px 0;
+    cursor:pointer;
+    position: relative;
+    left:-4%;
+}
+
+section nav .logo span{
+    font-size: 2rem;
+    font-weight: 100;
+    font-family: 'Ultra', serif;
+    color: #F2B602;
+    text-decoration: none;
+} 
+
+section nav ul{
+    list-style: none;
+}
+
+section nav ul li{
+    display: inline-block;
+    margin: 5px 15px;
+}
+
+section nav ul li a{
+    text-decoration: none;
+    color: #000;
+    transition: 0.2s;
+}
+
+section nav ul li a:hover{
+    color: #0B5D9B;
+}
+
+section nav .icons i{
+    margin: 0 4px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+section nav .icons i:hover{
+    color: #0B5D9B;
+}
+
+section .main .main_content{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+section .main .main_content .main_text h1{
+    font-size: 90px;
+    line-height: 70px;
+    font-family: fantasy;
+    font-weight: 50;
+    /* font-family: pyxidium quick; */
+    background: linear-gradient(to right, #0B5D9B, #F2B602);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    top: 80px;
+    left: 5%;
+}
+
+section .main .main_content .main_text h1 span{
+    font-size: 70px;
+    background: linear-gradient(to right, #0B5D9B, #F2B602);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+section .main .main_content .main_text p{
+    width: 600px;
+    text-align: justify;
+    line-height: 21px;
+    position: relative;
+    top: 100px;
+    left: 10%;
+}
+
+section .main .main_content .main_image img{
+    width: 600px;
+    position: relative;
+    top: 75px;
+    left: 10px;
+}
+
+section .main .social_icon{
+    position: absolute;
+    top: 50%;
+    left: 98%;
+    transform: translate(-50%, -50%);
+    font-size: 19px;
+}
+
+section .main .social_icon i{
+    margin: 8px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section .main .social_icon i:hover{
+    color: #F2B602;
+}
+
+section .main .button{
+    position: absolute;
+    top: 65%;
+    left: 6%;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background: #0B5D9B;
+}
+
+section .main .button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+section .main .button i{
+    color: #fff;
+    margin-left: 5px;
+    transition: 0.3s;
+}
+
+/* section .main .button:hover{
+    transform: translateX(6px);
+}*/
+
+
+/* Products */
+
+ .products{
+    width: 100%;
+    height: 140vh;
+    padding: 25px 0;
+}
+
+.products h1{
+    margin: 35px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background: #0B5D9B;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.products .box{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+}
+
+.products .box .card{
+    width: 290px;
+    height: 440px;
+    box-shadow: 0 0 8px navy;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px 20px;
+    background: #f6f6f6;
+}
+
+.products .box .card .image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.products .box .card .image img{
+    width: 150px;
+    margin: 15px 0;
+    transition: 0.3s;
+}
+
+.products .box .card:hover .image img{
+    transform: scale(1.1);
+}
+
+.products .box .card .products_text h2{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.products .box .card .products_text p{
+    color: #919191;
+    line-height: 21px;
+    margin: 8px 0;
+}
+
+.products .box .card .products_text h3{
+    margin: 5px 0;
+}
+
+.products .box .card .products_text .products_star{
+    color: orange;
+    margin-bottom: 19px;
+    cursor: pointer;
+}
+
+.products .box .card .products_text .btn{
+    text-decoration: none;
+    padding: 10px 20px;
+    background: #0B5D9B;
+    color: white;
+}
+
+/* About */
+
+.about{
+    width: 100%;
+    height: 100vh;
+    padding: 35px 0;
+}
+
+.about h1{
+    margin-top: 20px 0;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform: uppercase;
+}
+
+.about h1 span{
+    background:  #0B5D9B;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+
+.about .about_main{
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about .about_main .about_image{
+    display: flex;
+    margin-top: 50px;
+}
+
+/* .about .about_main .about_image img{
+    height: 400px;
+    margin: 10px 20px;
+    cursor: pointer;
+    padding: 5px 5px;
+    box-shadow: 0 0 5px black;
+}*/
+
+.about .about_main .image_container{
+    padding: 5px;
+    display: flex;
+}
+
+.about .about_main .image_container img{
+    border: 3px solid white;
+    height: 400px;
+    margin: 10px 20px;
+    box-shadow: 0 0 8px black;
+}
+
+.about .about_main .about_text{
+    margin-top: 45px;
+
+}
+
+.about .about_main .about_text p{
+    line-height: 22px;
+    width: 600px;
+    text-align: justify;
+    padding: 25px 30px;
+    border: 2px solid grey;
+    border-radius: 20px;
+    box-shadow: 0 0 8px grey;
+}
+
+.about .about_btn{
+    color: #000;
+    background: none;
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 25px;
+    border: 2px solid #F2B602;
+    text-decoration: none;
+    box-shadow: 0 0 8px #F2B602;
+    transition: 0.5s;
+}
+
+.about .about_btn:hover{
+    border: 2px solid transparent;
+    background: #F2B602;
+    color: white;
+}
+
+/* Review */
+
+.review{
+    width: 100%;
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.review h1{
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+}
+
+.review h1 span{
+    background:  #0B5D9B;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 15px;
+}
+
+.review .review_box{
+    width: 95%;
+    position: relative;
+    top: 7%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+.review .profile .profile_image{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 5px 0;
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review .profile .profile_image:hover{
+    transform: scale(1.2);
+}
+
+.review .profile_image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.review .profile{
+    display: flex;
+    align-items: center;
+}
+
+.review .review_box .review_card{
+    width: 500px;
+    background: #f3f1f1;
+    padding: 20px 25px;
+    border-radius: 5px;
+    margin: 15px;
+    box-shadow: 0 0 10px black;
+}
+
+.review .review_box .review_card .card_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.review .review_box .review_card .card_top .profile .name{
+    margin-left: 20px;
+    line-height: 22px;
+}
+
+.review .review_box .review_card .card_top .profile .name strong{
+    font-size: 20px;
+}
+
+.review .review_box .review_card .card_top .profile .name .like i{
+    color: #F2B602;
+    display: inline-block;
+    font-size: 12px;
+}
+
+.review .review_box .review_card .comment p{
+    text-align: justify;
+    line-height: 22px;
+    margin-top: 15px;
+}
+
+/* Login and Register Form */
+
+.login_form{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.login_form .left img{
+    width:650px;
+}
+
+.login_form .right{
+    position: relative;
+    top: -50px;
+    left: -60px;
+    padding: 50px 80px;
+}
+
+.login_form .right h1{
+    font-family: sans-serif;
+    font-size: 45px;
+    margin-bottom: 40px;
+}
+
+.login_form .right p{
+    margin-bottom: 5px;
+
+}
+
+.login_form .right .user{
+    border: 2px solid #0B5D9B;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.login_form .right .user i{
+    position: relative;
+    top: 10px;
+    left: 15px;
+    color: #0B5D9B;
+}
+
+.login_form .right .user .username{
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    font-size: 15px;
+}
+
+.login_form .right .password_tag{
+    margin: 15px 0 5px 0;
+}
+
+.login_form .right .password{
+    border: 2px solid #0B5D9B;
+    border-radius: 5px;
+    width: 350px;
+    height: 40px;
+    display: flex;
+}
+
+.login_form .right .password i{
+    position: relative;
+    top: 10px;
+    left: 15px;
+    color: #0B5D9B;
+}
+
+.login_form .right .password input{
+    position: relative;
+    left: 9%;
+    width: 295px;
+    background: none;
+    outline: none;
+    border: none;
+    display: flex;
+    font-size: 15px;
+}
+
+::-webkit-input-placeholder{
+    color: #000;
+    opacity: 0.7;
+}
+
+.login_form .right .forget{
+    position: relative;
+    left: 60%;
+    margin: 6px 0 10px 0;
+    cursor: pointer;
+}
+
+.login_form .right button{
+    width: 350px;
+    color: white;
+    padding: 7px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    background: #0B5D9B;
+}
+
+/* Footer */
+
+footer{
+    width: 100%;
+    height: 100px;
+    background: #0B5D9B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .footer_main{
+    width: 100%;
+    background: #f3f1f1;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag{
+    margin: 10px 0;
+}
+
+footer .footer_main .tag h1{
+    font-size: 25px;
+    margin: 25px 0;
+    color: #0B5D9B;
+}
+
+footer .footer_main .tag a{
+    dislay: block;
+    color: black;
+    text-decoration: none;
+    margin: 9px 0;
+}
+
+footer .footer_main .tag a i{
+    padding: 0 10px;
+    transition: 0.3;
+}
+
+footer .footer_main .tag a i:hover{
+    color: #0B5D9B;
+}
+
+footer .footer_main .tag .social_link{
+    display: flex;
+}
+
+footer .footer_main .tag .social_link a{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    box-shadow: 0 0 20px 10px black;
+    margin: 0 5px;
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+}
+
+footer .footer_main .tag .social_link a .fa-brands{
+    font-size: 15px;
+    line-height: 30px;
+    z-index: 10;
+    position: relative;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover i{
+    color:white;
+}
+
+footer .footer_main .tag .social_link a::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -90px;
+    width: 100%;
+    height: 100%;
+    background: #0B5D9B;
+    z-index: -10;
+    transition: 0.5s;
+}
+
+footer .footer_main .tag .social_link a:hover::after{
+    left: 0;
+}
+
+
+
+
+
+
